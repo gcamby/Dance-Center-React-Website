@@ -1,0 +1,327 @@
+/* general html and body styling */
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; 
+}
+
+/* General anchor styling */
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* Navbar styling */
+#navbar-backdrop{
+  background: #34005E ;
+  position: fixed;
+  min-height: 105px;
+  max-height: 105px;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+#navbar-contents{
+  color: white;
+  position: fixed;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#navbar-logo-container{
+  display: flex;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+#navbar-logo-container a:visited{
+  color: white
+}
+
+#navbar-logo-container h1{
+  margin: 0px;
+}
+
+#navbar-link-container{
+  margin-right: 40px;
+  display: flex;
+  
+}
+
+.navbar-link-item{
+  min-width: 120px;
+  margin-right: 20px;
+}
+
+.navbar-link-item-main {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.navbar-link-item-submenu{
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: #34005E;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.navbar-link-item-submenu-link{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-link-column{
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar-links ul li {
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  font-family: "IBM Plex Sans", sans-serif;
+  
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.submenu{
+  list-style: none;
+  padding-left: 0px ;
+  margin: 0px;
+}
+
+/* Main container styling */
+#main-container {
+  background-image: url("../public/backgrounds/shiny Overlay (1).svg");
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
+  min-height: 100vh;
+}
+
+/* Home Page Mosaic Section Styling */
+#mosaic-section{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  max-width: 1400px;
+  /* background-image: url("../public/backgrounds/shiny Overlay.svg"); */
+}
+
+/* Home Page Card Styling */
+.home-page-card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  min-width: 400px; 
+  max-width: 400px;
+  min-height: 480px;
+  max-height: 480px;
+  margin: 10px;
+  border-radius: 5px; 
+  overflow: hidden; 
+  background-color: #FFFDD0;
+  height: fit-content;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.home-page-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  background-color: #cccaa6;
+}
+
+.home-page-card-image {
+  width: 100%; 
+  display: block; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.home-page-card-container {
+  padding: 8px;
+  margin: 16px;
+  height: fit-content;
+} 
+
+.home-page-card-title {
+  font-size: 24px;
+  height: fit-content;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 10px;
+} 
+
+.home-page-card-text {
+  font-size: 16px;
+  color: #333;
+  height: fit-content;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} 
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('path/to/your/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#schedule-container{
+  background-image: url("../public/backgrounds/shiny Overlay (1).svg");
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-top: 105px;
+  min-height: 100vh;
+}
+
+thead .heading-row{
+  position: sticky;
+  top: 0;
+}
+
+td{
+  text-align: center;
+}
+
+/* animations */
+@keyframes jiggle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes small-jiggle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

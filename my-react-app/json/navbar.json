@@ -1,0 +1,29 @@
+{
+    "navmenu" : [
+      {
+        "navItemMain": {"title": "Home","route": "/"}
+      },
+      {
+        "navItemMain": {"title": "Lessons","route": "/lessons"},
+        "navItemSubmenu": [
+          {"title" : "Private Lessons", "route" : "private-lessons"},
+          {"title" : "Group Lessons", "route" : "group-lessons"},
+          {"title" : "Wedding Dance", "route" : "wedding"}
+        ]
+      },
+      {
+        "navItemMain": {"title": "Events","route": "/events"}
+      },
+      {
+        "navItemMain": {"title": "Media","route": "/media"}
+      },
+      {
+        "navItemMain": {"title": "About","route": "/about"},
+        "navItemSubmenu": [
+          {"title" : "Studio Rentals", "route" : "/studio-rentals"},
+          {"title" : "Team", "route" : "/team"},
+          {"title" : "Contact", "route" : "/contact"}
+        ]
+      }
+    ]
+  }
