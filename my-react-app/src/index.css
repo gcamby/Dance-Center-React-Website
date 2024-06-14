@@ -115,38 +115,6 @@ a:link, a:visited {
   font-size: 16px;
 }
 
-
-
-
-
-
-
-
-
-
-.nav-link-column{
-  display: flex;
-  flex-direction: column;
-}
-
-#navbar-links ul li {
-  color: #fff;
-  padding: 10px 15px;
-  display: inline-block;
-  font-family: "IBM Plex Sans", sans-serif;
-  
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-
-.submenu{
-  list-style: none;
-  padding-left: 0px ;
-  margin: 0px;
-}
-
 /* Main container styling */
 #main-container {
   background-image: url("../public/backgrounds/shiny Overlay (1).svg");

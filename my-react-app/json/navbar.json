@@ -24,6 +24,9 @@
           {"title" : "Team", "route" : "/team"},
           {"title" : "Contact", "route" : "/contact"}
         ]
+      },
+      {
+        "navItemMain": {"title": "Login","route": "/login"}
       }
     ]
   }

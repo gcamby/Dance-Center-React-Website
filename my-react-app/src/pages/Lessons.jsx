@@ -1,6 +1,11 @@
+import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
+
 function Lessons() {
     return(
-        <h1>Lessons</h1>
+        <div>
+            <Navbar />
+        </div>
     );
 }
 

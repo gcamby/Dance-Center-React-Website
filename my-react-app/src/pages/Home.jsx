@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import HomePageCard from '../components/HomePageCard';
+import Navbar from '../components/Navbar/Navbar';
 
 function Home() {
     
@@ -33,12 +34,14 @@ function Home() {
       }
     
     return(
+      <div>
+        <Navbar />
         <div id="main-container">
             <div id="mosaic-section">
                 {homePageCards.map(createHomePageCard)}
-
             </div>
         </div>
+      </div>
     );
 }
 

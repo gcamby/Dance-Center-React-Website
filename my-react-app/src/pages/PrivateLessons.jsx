@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from '../components/Navbar/Navbar';
 
 function PrivateLessons() {
     return(
-        <h1>Private Lessons</h1>
+        <div>
+            <Navbar />
+        </div>
     );
 }
 

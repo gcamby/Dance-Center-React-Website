@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from '../components/Navbar/Navbar';
 
 function Media() {
     return(
-        <h1>Media</h1>
+        <div>
+            <Navbar />
+        </div>
     );
 }
 
