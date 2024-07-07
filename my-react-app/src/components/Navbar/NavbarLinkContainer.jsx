@@ -1,5 +1,12 @@
+/* React imports */
 import React from "react";
+/* Sub-component imports */
 import NavbarLinkItem from "./NavbarLinkItem";
+/* Library imports */
+/* JSON imports */
+
+
+
 
 function createNavbarLinkItem(item, index) {
     return(

@@ -1,11 +1,17 @@
+/* React imports */
 import React from "react";
-import Navbar from '../components/Navbar/Navbar';
+/* Sub-component imports */
+/* Library imports */
+/* JSON imports */
+
+
+
 
 function About() {
     
     return(
         <div>
-            <Navbar />
+
         </div>
     );
 }

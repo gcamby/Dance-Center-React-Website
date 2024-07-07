@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+/* React imports */
+import React from 'react';
+/* Sub-component imports */
 import HomePageCard from '../components/HomePageCard';
-import Navbar from '../components/Navbar/Navbar';
+import HomePageCardData from '../../json/home_page_cards.json'
+/* Library imports */
+/* JSON imports */
 
-function Home() {
-    
-    const [homePageCards, setHomePageCards] = useState([]);
-
-    useEffect(() => {
-      const fetchHomePageCards = async () => {
-        try {
-          const response = await axios.get('http://localhost:5000/api/home-page-cards');
-          setHomePageCards(response.data);
-        } catch (error) {
-          console.error('Error fetching homePageCard:', error);
-        }
-      };
-
-      fetchHomePageCards();
-    }, []);
+function Home(props) {
 
     function createHomePageCard(card) {
         return(
@@ -35,10 +23,9 @@ function Home() {
     
     return(
       <div>
-        <Navbar />
         <div id="main-container">
             <div id="mosaic-section">
-                {homePageCards.map(createHomePageCard)}
+                {HomePageCardData.homePageCards.map(createHomePageCard)}
             </div>
         </div>
       </div>

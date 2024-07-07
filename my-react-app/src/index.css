@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh; 
+  min-height: calc(100vh - 105px); 
 }
 
 /* General anchor styling */
@@ -115,13 +115,35 @@ a:link, a:visited {
   font-size: 16px;
 }
 
+/* Vertical navbar styling */
+#vertical-navbar{
+  height : 100%;
+  width : 250px;
+  background-color : purple;
+  margin-top: 105px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-navbar-item{
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
 /* Main container styling */
 #main-container {
   background-image: url("../public/backgrounds/shiny Overlay (1).svg");
   display: flex;
   justify-content: center;
   margin-top: 105px;
-  min-height: 100vh;
+  min-height: calc(100vh - 105px); 
 }
 
 /* Home Page Mosaic Section Styling */

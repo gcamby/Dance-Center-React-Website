@@ -4,7 +4,7 @@ import React from "react";
 /* Library imports */
 /* JSON imports */
 
-function Media() {
+function Weddings() {
     return(
         <div>
 
@@ -12,4 +12,4 @@ function Media() {
     );
 }
 
-export default Media;
+export default Weddings;

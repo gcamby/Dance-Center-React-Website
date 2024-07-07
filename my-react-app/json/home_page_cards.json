@@ -1,0 +1,52 @@
+{
+    "homePageCards":[
+      {
+        "id": 1,
+        "route": "/private-lessons",
+        "imgSource": "./public/stock_images/privatelesson.jpg",
+        "altText": "./Image of a private dance lesson",
+        "title": "Private Lessons",
+        "text": "The BEST way to learn to dance. Progress at your own rate and on your own schedule."
+      },
+      {
+        "id": 2,
+        "route": "/group-lessons",
+        "imgSource": "./public/stock_images/groupclass.jpg",
+        "altText": "./Image of a group-lesson",
+        "title": "Group Classes, Kids Classes & Online Workshops",
+        "text": "Learn to dance and meet new friends. No partner needed!"
+      },
+      {
+        "id": 3,
+        "route": "/events",
+        "imgSource": "./public/stock_images/social.jpg",
+        "altText": "./Image of a social dance event",
+        "title": "Socials and Events",
+        "text": "Meet Friends, have fun, and practice your new dance moves!"
+      },
+      {
+        "id": 4,
+        "route": "/weddings",
+        "imgSource": "./public/stock_images/wedding.jpg",
+        "altText": "./Image of a wedding",
+        "title": "Weddings",
+        "text": "From the first dance of your dreams to getting the whole wedding party in on the action."
+      },
+      {
+        "id": 5,
+        "route": "/rentals",
+        "imgSource": "./public/stock_images/rental.jpg",
+        "altText": "./Image of a ballroom",
+        "title": "Rentals",
+        "text": "With 2 ballrooms and up to 12,000 SqFt of space, we can handle your event, large or small."
+      },
+      {
+        "id": 6,
+        "route": "/about",
+        "imgSource": "./public/stock_images/staff.jpg",
+        "altText": "./Image of a charming staff",
+        "title": "About Us",
+        "text": "Meet our dedicated team!"
+      }
+    ]
+  }

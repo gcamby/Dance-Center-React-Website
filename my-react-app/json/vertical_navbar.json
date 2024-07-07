@@ -1,0 +1,16 @@
+{
+    "navmenu" : [
+      {
+        "navItemMain": {"title": "Edit Profile","route": "/"}
+      },
+      {
+        "navItemMain": {"title": "Messages","route": "/"}
+      },
+      {
+        "navItemMain": {"title": "Manage Classes","route": "/"}
+      },
+      {
+        "navItemMain": {"title": "Logout","route": "/"}
+      }
+    ]
+  }

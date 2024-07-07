@@ -1,11 +1,14 @@
+/* React imports */
 import React from "react";
+/* Sub-component imports */
 import Schedule from "../components/Schedule";
-import Navbar from '../components/Navbar/Navbar';
+/* Library imports */
+/* JSON imports */
 
 function GroupClasses() {
     return(
         <div>
-            <Navbar />
+
             <div id="schedule-container">
                 <Schedule />
             </div>

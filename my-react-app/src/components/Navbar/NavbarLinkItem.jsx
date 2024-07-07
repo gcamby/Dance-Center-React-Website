@@ -1,6 +1,10 @@
+/* React imports */
 import React, {useState} from "react";
+/* Sub-component imports */
 import NavbarLinkItemMain from "./NavbarLinkItemMain";
 import NavbarLinkItemSubmenu from "./NavbarLinkItemSubmenu";
+/* Library imports */
+/* JSON imports */
 
 function NavbarLinkItem(props) {
     
@@ -8,12 +12,10 @@ function NavbarLinkItem(props) {
 
     function handleMouseEnter() {
         setSubMenuIsVisible(true);
-        console.log(subMenuIsVisible);
     }
 
     function handleMouseLeave() {
         setSubMenuIsVisible(false);
-        console.log(subMenuIsVisible);
     }
 
     return(

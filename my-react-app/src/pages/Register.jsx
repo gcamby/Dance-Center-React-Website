@@ -1,11 +1,18 @@
+/* React imports */
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+/* Sub-component imports */
 import RegisterContainer from "../components/Register/RegisterContainer";
+/* Library imports */
+/* JSON imports */
+
+
+
+
 
 function Register() {
 return(
     <div>
-    <Navbar />
+
     <div id='main-container'>
         <RegisterContainer />
     </div>

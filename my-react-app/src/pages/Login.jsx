@@ -1,14 +1,22 @@
+/* React imports */
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import LoginContainer from '../components/Login/LoginContainer';
 import { Link } from 'react-router-dom';
+/* Sub-component imports */
+import LoginContainer from '../components/Login/LoginContainer';
+/* Library imports */
+/* JSON imports */
 
-function Login() {
+
+
+
+
+
+function Login(props) {
     return(
         <div>
-            <Navbar />
+
             <div id='main-container'>
-                <LoginContainer />
+                <LoginContainer setUser={props.setUser}/>
                 <p>Don't have an account? Register<Link to="/register"> here</Link></p>
             </div>
         </div>

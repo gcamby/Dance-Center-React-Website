@@ -1,6 +1,13 @@
+/* React imports */
 import React, { useEffect, useState } from 'react';
+/* Sub-component imports */
 import GroupClass from './GroupClass';
+/* Library imports */
 import axios from 'axios';
+/* JSON imports */
+
+
+
 
 
 function Schedule(props){
