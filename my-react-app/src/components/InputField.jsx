@@ -9,7 +9,7 @@ import React, {useState} from "react";
 
 function InputField(props) {
     return(
-        <div>
+        <div className="input-field">
             <label htmlFor={props.name}>{props.dataLabel}</label>
             <input type={props.type} id={props.name} name={props.name} placeholder={props.dataLabel} onChange={props.onChange}/>
         </div>

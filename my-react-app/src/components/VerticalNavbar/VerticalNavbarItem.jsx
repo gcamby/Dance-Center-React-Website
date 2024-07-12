@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function VerticalNavbarItem(props) {
     return(
-        <Link to={props.route} className="navbar-link-item-main">{props.text}</Link>
+        <button onClick={props.clickFunction}>{props.label}</button>
     );
 }
 
