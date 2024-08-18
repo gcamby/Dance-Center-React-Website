@@ -46,7 +46,7 @@ function LoginContainer(props) {
                 setMessage("Network response was not ok")
                 throw new Error('Network response was not ok');
             } else {
-                const isAuthenticated = await axios.get('/api/auth/status');
+                const isAuthenticated = await axios.get('/api/current-user');
                 props.setUser(isAuthenticated.data.user);
                 navigate(response.data.nav);
             }

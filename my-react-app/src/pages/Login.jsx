@@ -1,6 +1,6 @@
 /* React imports */
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 /* Sub-component imports */
 import LoginContainer from '../components/Login/LoginContainer';
 /* Library imports */
@@ -16,8 +16,7 @@ function Login(props) {
         <div>
 
             <div id='main-container'>
-                <LoginContainer setUser={props.setUser}/>
-                <p>Don't have an account? Register<Link to="/register"> here</Link></p>
+                    <LoginContainer setUser={props.setUser}/>   
             </div>
         </div>
     );

@@ -1,8 +1,9 @@
 /* React imports */
 import React from "react";
 /* Sub-component imports */
-import Schedule from "../components/Schedule";
+import Calendar from "../components/Calendar";
 /* Library imports */
+
 /* JSON imports */
 
 function GroupClasses() {
@@ -10,7 +11,7 @@ function GroupClasses() {
         <div>
 
             <div id="schedule-container">
-                <Schedule />
+                <Calendar />
             </div>
         </div>
 

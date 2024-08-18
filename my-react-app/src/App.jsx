@@ -17,10 +17,25 @@ import Register from './pages/Register';
 import Account from './pages/Account';
 import Navbar from './components/Navbar/Navbar';
 /* Library imports */
+import axios from 'axios';
 /* JSON imports */
 
 function App() {
   const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchCurrentUser = async () => {
+      try {
+        const response = await axios.get('/api/current-user', { withCredentials: true });
+        console.log(response);
+        setUser(response.data.user);
+      } catch (error) {
+        console.error('Failed to fetch current user:', error);
+      }
+    };
+
+    fetchCurrentUser();
+  }, []);
 
   return (
       <Router >
@@ -39,7 +54,7 @@ function App() {
           <Route path="/media" element={<Media />} />
           <Route path="/login" element={<Login setUser={setUser}/>} />
           <Route path="/register" element={<Register />} />
-          <Route path="/account" element={<Account />} />
+          <Route path="/account" element={<Account setUser={setUser}/>} />
         </Routes>
       </div>
       </Router>

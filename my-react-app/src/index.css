@@ -117,11 +117,10 @@ a:link, a:visited {
 
 /* Vertical navbar styling */
 #vertical-navbar{
-  height : 100%;
-  width : 250px;
+  min-height : 100%;
+  min-width : 250px;
+  max-width: 250px;
   background-color : purple;
-  margin-top: 105px;
-  position: fixed;
   display: flex;
   flex-direction: column;
 }
@@ -143,7 +142,16 @@ a:link, a:visited {
   display: flex;
   justify-content: center;
   margin-top: 105px;
+  min-width: 100%;
   min-height: calc(100vh - 105px); 
+}
+
+.center-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 /* Home Page Mosaic Section Styling */
@@ -155,6 +163,113 @@ a:link, a:visited {
   width: 80%;
   max-width: 1400px;
   /* background-image: url("../public/backgrounds/shiny Overlay.svg"); */
+}
+
+#login-container{
+  margin-top: 150px;
+  height:fit-content;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid black; /* Adjust thickness and color here */
+}
+
+#login-container .form-header{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  background-color: #34005E;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.form-header h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#login-container form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#login-container button{
+  background-color: #34005E;
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+
+  #login-container p{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;  
+  }
+
+  #register-container{
+    margin-top: 150px;
+    height:fit-content;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid black; /* Adjust thickness and color here */
+  }
+  
+  #register-container .form-header{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    background-color: #34005E;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  #register-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    #register-container button{
+      background-color: #34005E;
+      color: white;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      }
+    
+      #register-container p{
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;  
+      }
+
+#account-container{
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Home Page Card Styling */
@@ -211,6 +326,69 @@ a:link, a:visited {
   font-style: normal;
 } 
 
+.input-field{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.input-field label{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.input-field input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  grid-auto-rows: minmax(40px, auto);
+  gap: 0px;
+  background-color: #ddd;
+}
+
+.calendar-header {
+  background-color: #0074D9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.time-slot {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 0px;
+  border: 0px solid #ddd;
+  font-weight: bold;
+}
+
+.slot {
+  background-color: #fff;
+  border: 0px solid #ddd;
+  padding: 10px;
+}
+
+.blue-overlap{
+  grid-row-start: 1;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: red;
+  z-index: 12;
+}
+
 .hero{
   display: flex;
   flex-direction: column;
@@ -232,6 +410,12 @@ a:link, a:visited {
   min-height: 100vh;
 }
 
+.profile-picture{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px; 
+}
+
 thead .heading-row{
   position: sticky;
   top: 0;
@@ -240,6 +424,8 @@ thead .heading-row{
 td{
   text-align: center;
 }
+
+
 
 /* animations */
 @keyframes jiggle {

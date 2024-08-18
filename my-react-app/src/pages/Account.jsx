@@ -9,12 +9,17 @@ import UserDataDisplay from "../components/UserDataDisplay/UserDataDisplay";
 
 
 
-function Account() {
+function Account(props) {
+    
+    
     return(
         
-        <div className="main-container">
-            <VerticalNavbar />
+        <div id="main-container">
+            <div id="account-container">
+            <VerticalNavbar setUser={props.setUser}/>
             <UserDataDisplay />
+            </div>
+            
         </div>
     );
 }
